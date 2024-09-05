@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer Between Accounts</title>
+    <link rel="stylesheet" href="transaction.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Transfer Between Accounts</h1>
+
+      <!-- Search Accounts -->
+      <input
+        type="text"
+        id="searchTransferInput"
+        placeholder="Search Account by Name or Account Number..."
+        oninput="filterTransferAccounts()"
+      />
+
+      <!-- Transfer Form -->
+      <form id="transferForm">
+        <label for="fromAccount">From Account Number:</label>
+        <input type="text" id="fromAccount" name="fromAccount" required /><br />
+
+        <label for="toAccount">To Account Number:</label>
+        <input type="text" id="toAccount" name="toAccount" required /><br />
+
+        <label for="transferAmount">Amount to Transfer:</label>
+        <input
+          type="number"
+          id="transferAmount"
+          name="transferAmount"
+          required
+        /><br />
+
+        <button type="submit">Transfer</button>
+      </form>
+
+      <!-- Account Table -->
+      <table id="transferAccountTable">
+        <thead>
+          <tr>
+            <th>Account Number</th>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>Select</th>
+          </tr>
+        </thead>
+        <tbody id="transferAccountTableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="transaction.js"></script>
+  </body>
+</html>

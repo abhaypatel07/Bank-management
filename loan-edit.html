@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Loan Details</title>
+    <link rel="stylesheet" href="loan.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Loan Details</h1>
+      <input
+        type="text"
+        id="searchLoanEdit"
+        placeholder="Search by SSN or Name"
+        oninput="filterLoans('edit')"
+      />
+      <table id="editLoanTable">
+        <!-- Loan details will be dynamically populated here for editing -->
+      </table>
+    </div>
+    <script src="loan.js"></script>
+  </body>
+</html>

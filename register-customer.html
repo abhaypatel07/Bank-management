@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="customer.css" />
+    <!-- <link rel="stylesheet" href="styles1.css"> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Customer Registration Form</h1>
+      <form id="customerForm">
+        <label for="ssn">Customer SSN ID:</label>
+        <input type="text" id="ssn" name="ssn" required /><br />
+
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="ifscCode">IFSC Code:</label>
+        <input type="text" id="ifscCode" name="ifscCode" required /><br />
+
+        <label for="balance">Account Balance:</label>
+        <input type="number" id="balance" name="balance" required /><br />
+
+        <label for="aadhaar">Aadhaar Card No.:</label>
+        <input type="text" id="aadhaar" name="aadhaar" required /><br />
+
+        <label for="panCard">Pan Card No.:</label>
+        <input type="text" id="panCard" name="panCard" required /><br />
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option></select
+        ><br />
+
+        <label for="maritalStatus">Marital Status:</label>
+        <select id="maritalStatus" name="maritalStatus" required>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option></select
+        ><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br />
+
+        <label for="contactNumber">Contact Number:</label>
+        <input
+          type="tel"
+          id="contactNumber"
+          name="contactNumber"
+          required
+        /><br />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div id="successPopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p>Customer Registration Successful.</p>
+      </div>
+    </div>
+
+    <script src="register-customer.js"></script>
+  </body>
+</html>

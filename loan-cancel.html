@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancel Loan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cancel Loan</h1>
+      <input
+        type="text"
+        id="searchLoanCancel"
+        placeholder="Search by SSN or Name"
+        oninput="filterLoans('cancel')"
+      />
+      <table id="cancelLoanTable">
+        <!-- Loan details will be dynamically populated here for canceling -->
+      </table>
+    </div>
+    <script src="loan.js"></script>
+  </body>
+</html>
